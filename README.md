@@ -6,9 +6,6 @@ While developing applications in the C# language, you could use various data typ
 The difference between them is very simple—a variable of a value type directly contains data, while a variable of a reference type just stores a reference to data, as shown as follows:
 As you can see, a Value type stores its actual Value directly in the Stack memory, while a Reference type only stores a Reference here. The actual value is located in the Heap memory. Therefore, it is also possible to have two or more variables of a reference type that reference exactly the same value.
 
-
-
-
 # Arrays
 When you want to store a set of variables you can use Arrays. When you face arrays you sometimes need to **Sort** them. There are some familiar sorting algorithms such as :
 selection sort, insertion sort, bubble sort, and quicksort.
