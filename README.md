@@ -41,4 +41,5 @@ public class SelectionSort<T> : IArraySorter<T> where T : IComparable
             return array;
         }
 ```
-
+I added some tests here,  
+[Test Selection Sort  Algorithm](https://github.com/imansafari1991/Csharp-Data-Structures-And-Algorithms/blob/master/test/Array.Tests/SelectionSortTests.cs "Test Selection Sort  Algorithm") instead of calling method and get input
