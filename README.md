@@ -17,7 +17,7 @@ Selection sort is the most straightforward sorting algorithm. The algorithm divi
 
 At the first step of algorithm **(i=0)**, we consider the sorted part of the array empty. We consider the i*th* index of the array as the minimum Value. Try to sweep at the rest elements of the array with the *m* index that starts from **i+1** and find the minimum value of the array by comparing each element with minValue. In each iteration, compare the element's value with minValue, and substitute it with minValue.
 In the preceding code, you can find the implementation of ascending sort for a generic array.
-[Implementation Of SelectionSort](https://github.com/imansafari1991/Csharp-Data-Structures-And-Algorithms/blob/master/src/Arrays/Implementations/SelectionSort.cs "Implementation Of SelectionSort")
+[Implementation Of Ascending SelectionSort](https://github.com/imansafari1991/Csharp-Data-Structures-And-Algorithms/blob/master/src/Arrays/Implementations/SelectionSort.cs "Implementation Of Ascending SelectionSort")
 ```
 public class SelectionSort<T> : IArraySorter<T> where T : IComparable
     {
@@ -40,4 +40,6 @@ public class SelectionSort<T> : IArraySorter<T> where T : IComparable
 
             return array;
         }
+```
+Also, you can find the `Descending` one here:
 
