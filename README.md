@@ -13,7 +13,8 @@ When you want to store a set of variables, you can use **Arrays**. When you face
 ## Selection sort
 Selection sort is the most straightforward sorting algorithm. The algorithm divides the array into two parts, namely **sorted** and **unsorted**. In the following iterations, the algorithm finds the **smallest** element in the unsorted part and exchanges it with the first element in the unsorted part. Before writing code, let's sort an array with nine elements [-11, 12, -42, 0, 1, 90, 68, 6, -9].
 
-![image](https://github.com/imansafari1991/Csharp-Data-Structures-And-Algorithms/assets/52294855/915d61e9-0f5e-4be8-a977-707bcfd8d274)
+![image](https://github.com/imansafari1991/Csharp-Data-Structures-And-Algorithms/assets/52294855/a4058027-62cf-4df4-8278-964fa8b5b735)
+
 
 At the first step of algorithm **(i=0)**, we consider the sorted part of the array empty. We consider the i*th* index of the array as the minimum Value. Try to sweep at the rest elements of the array with the *m* index that starts from **i+1** and find the minimum value of the array by comparing each element with minValue. In each iteration, compare the element's value with minValue, and substitute it with minValue.
 In the preceding code, you can find the implementation of ascending sort for a generic array.
