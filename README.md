@@ -44,3 +44,17 @@ public class SelectionSort<T> : IArraySorter<T> where T : IComparable
 ```
 I added some tests here,  
 [Test Selection Sort  Algorithm](https://github.com/imansafari1991/Csharp-Data-Structures-And-Algorithms/blob/master/test/Array.Tests/SelectionSortTests.cs "Test Selection Sort  Algorithm") instead of calling method and get input
+
+# Simple lists
+Arrays are really useful data structures, and they are applied in many algorithms. However, in some cases their application could be complicated due to their nature, which does not
+allow to increase or decrease the length of the already-created array. What should you do if you do not know the total number of elements to store in the collection? Do you need to create a very big array and just not use unnecessary elements? Such a solution does not sound good, does it? A much better approach is to use a data structure that makes it possible to dynamically increase the size of the collection if it is necessary.
+## Array list
+The first data structure that meets this requirement is the array list, which is represented by the ArrayList class from the System.Collections namespace. You can use this class to store big collections of data, to which you can easily add new elements when necessary. Of course, you can also remove them, count items, and find an index of a particular value stored within the array list.
+```
+ArrayList arrayList = new ArrayList();
+arrayList.Add(5);
+arrayList.AddRange(new int[] { 6, -7, 8 });
+arrayList.AddRange(new object[] { "Marcin", "Mary" });
+arrayList.Insert(5, 7.8);
+```
+ArrayList can store multiple types of data; it means that you can store `integers`, `strings` etc. If you want to specify a type of each element, you can use the generic `List<T>`.
