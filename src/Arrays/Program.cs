@@ -68,6 +68,33 @@ namespace Arrays
             // Creates a multidimensional System.Array of the specified System.Type and dimension
             //lengths, with the specified lower bounds.
             Array nDArrayNonZeroBased = Array.CreateInstance(typeof(int), new int[] { 2, 3, 4 },new int[] {1,3,2});
+
+
+
+            // Reverse
+
+            // Reverses all elements of the given array. Following a call to this
+            // method, an element previously located at index i will now be
+            // located at index length - i - 1, where length is the
+            // length of the array.
+          
+            Console.WriteLine($"a3 array is:{string.Join(',',a3)}");
+            Array.Reverse(a3);
+            Console.WriteLine($"reverse of a3 array is:{ string.Join(',', a3)}");
+             
+             int[] a5 = { 1, 2, 3, 4, 5,6,7,8,9,10 };
+
+            // Reverses the elements in a range of an array. Following a call to this
+            // method, an element in the range given by index and count
+            // which was previously located at index i will now be located at
+            // index index + (index + count - i - 1).
+            // Reliability note: This may fail because it may have to box objects.
+            //Reverse array from `index` at size of `length`
+            Console.WriteLine($"a5 array is:{string.Join(',',a5)}");
+            Array.Reverse(a5,3,4);
+            Console.WriteLine($"a5 reverse array is:{string.Join(',', a5)}");
+
+
             myArray2.SetValue(1, 0);
 
             Console.Read();
