@@ -47,7 +47,11 @@ public class SortingTests
     {
         RunTestsForSortAlgorithm(Sorting.SelectionSort);
     }
-
+    [Fact]
+    public void InsertionSort_ValidInput_SortedOutput()
+    {
+        RunTestsForSortAlgorithm(Sorting.InsertionSort);
+    }
     private void PrintOut(int[] array)
     {
         _outputHelper.WriteLine("-----TRACE-----\n");

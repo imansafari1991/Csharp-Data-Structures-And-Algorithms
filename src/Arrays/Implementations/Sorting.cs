@@ -31,6 +31,20 @@ public class Sorting
             Swap(array, largestAt, partIndex);
         }
     }
+    public static void InsertionSort(int[] array)
+    {
+        for (int partIndex = 1; partIndex < array.Length; partIndex++)
+        {
+            int curUnsorted = array[partIndex];
+            int i;
+            for (i = partIndex; i > 0 && array[i - 1] > curUnsorted; i--)
+            {
+                array[i] = array[i - 1];
+            }
+
+            array[i] = curUnsorted;
+        }
+    }
 
     private static void Swap(int[] array, int i, int j)
     {
