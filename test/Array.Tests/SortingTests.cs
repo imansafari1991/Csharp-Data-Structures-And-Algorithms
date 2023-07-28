@@ -42,6 +42,11 @@ public class SortingTests
             PrintOut(sample);
         }
     }
+    [Fact]
+    public void SelectionSort_ValidInput_SortedOutput()
+    {
+        RunTestsForSortAlgorithm(Sorting.SelectionSort);
+    }
 
     private void PrintOut(int[] array)
     {
