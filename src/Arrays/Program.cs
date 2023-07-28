@@ -20,6 +20,10 @@ namespace Arrays
         }
         private static void ArraysDemo()
         {
+            var a = 3;
+            var b = 4;
+            (a, b) = (b, a);
+
             // null refrence array not allocated memory
             int[] a1;
             // allocate 10 integer in memory
