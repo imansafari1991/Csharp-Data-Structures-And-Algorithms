@@ -14,7 +14,7 @@ public class SortingTests
     }
     private int[][] Samples()
     {
-        int[][] samples = new int[9][];
+        int[][] samples = new int[10][];
         samples[0] = new[] { 1 };
         samples[1] = new[] { 2, 1 };
         samples[2] = new[] { 2, 1, 3 };
@@ -24,6 +24,8 @@ public class SortingTests
         samples[6] = new[] { 0, -5, 3, 3 };
         samples[7] = new[] { 0, -5, 3, 0 };
         samples[8] = new[] { 3, 2, 5, 5, 1, 0, 7, 8 };
+        samples[9] = new[] { 3, 2, 5, 5, 1, 0, 7, 8,-12,13,4,139 };
+
 
         return samples;
     }
@@ -51,6 +53,11 @@ public class SortingTests
     public void InsertionSort_ValidInput_SortedOutput()
     {
         RunTestsForSortAlgorithm(Sorting.InsertionSort);
+    }
+    [Fact]
+    public void ShellSort_ValidInput_SortedOutput()
+    {
+        RunTestsForSortAlgorithm(Sorting.ShellSort);
     }
     private void PrintOut(int[] array)
     {

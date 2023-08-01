@@ -102,6 +102,9 @@ namespace Arrays
             myArray2.SetValue(1, 0);
 
             Console.Read();
+
+            var s = "Hello world iman    ";
+          var dd=  s.Split(" ").Last(p => !string.IsNullOrWhiteSpace(p));
         }
         private static void Test1BasedArray()
         {

@@ -45,7 +45,25 @@ public class Sorting
             array[i] = curUnsorted;
         }
     }
+    public static void ShellSort(int[] array)
+    {
+        int gap = 1;
+        while (gap < array.Length / 3)
+            gap = 3 * gap + 1;
 
+        while (gap >= 1)
+        {
+            for (int i = gap; i < array.Length; i++)
+            {
+                for (int j = i; j >= gap && array[j] < array[j - gap]; j -= gap)
+                {
+                    Swap(array, j, j - gap);
+                }
+
+            }
+            gap /= 3;
+        }
+    }
     private static void Swap(int[] array, int i, int j)
     {
         if (i == j)
